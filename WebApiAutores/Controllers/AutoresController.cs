@@ -13,11 +13,11 @@ namespace WebApiAutores.Controllers
         {
             this.context = context;
         }
-
+         
         [HttpGet]
-        public async Task<ActionResult<List<Autor>>> Get()
+       public async Task<ActionResult<List<Autor>>> Get()
         {
-            return await context.Autores.Include(autor => autor.Libros).ToListAsync();
+            return await context.Autores.ToListAsync();
         }
 
         [HttpPost]

@@ -14,10 +14,10 @@ namespace WebApiAutores.Controllers
             this.context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-       [HttpGet("{id:int}")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<Libro>> Get(int id)
         {
-            return await context.Libros.Include(libro => libro.Autor).FirstOrDefaultAsync(libro => libro.Id == id);
+            return await context.Libros.Include(libro => libro.AutorId).FirstOrDefaultAsync(libro => libro.Id == id);
         }
 
         [HttpPost]
