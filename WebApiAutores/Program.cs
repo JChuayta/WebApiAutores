@@ -16,7 +16,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddTransient<MiFiltroDeAccion>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
- 
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer(); 
 builder.Services.AddSwaggerGen();

@@ -1,10 +1,16 @@
-﻿namespace WebApiAutores.Entidades
+﻿using System.ComponentModel.DataAnnotations;
+using WebAPIAutores.Validaciones;
+
+namespace WebApiAutores.Entidades
 {
     public class Libro
     {
         public int Id { get; set; }
-        public string? Titulo { get; set; }
-        public int AutorId { get; set; }
+        [Required]
+        [PrimeraLetraMayuscula]
+        [StringLength(maximumLength: 250)]
+        public string Titulo { get; set; }
+        public List<Comentario> Comentarios { get; set; }
     }
 }
        

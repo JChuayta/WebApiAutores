@@ -60,3 +60,5 @@ C:\Users\jcmamani\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net6.0\WebA
 C:\Users\jcmamani\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net6.0\WebApiAutores.genruntimeconfig.cache
 C:\Users\jcmamani\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net6.0\ref\WebApiAutores.dll
 C:\Users\jcmamani\source\repos\WebApiAutores\WebApiAutores\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\jcmamani\source\repos\WebApiAutores\WebApiAutores\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\jcmamani\source\repos\WebApiAutores\WebApiAutores\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
