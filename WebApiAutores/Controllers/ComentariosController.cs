@@ -22,6 +22,8 @@ namespace WebApiAutores.Controllers
         [HttpGet]
         public async Task<ActionResult<List<ComentarioDTO>>> Get(int libroId)
         {
+            var existeLibro = await context.Libros.AnyAsync(libroDB => libroDB.Id == libroId);
+            if (!existeLibro) return NotFound();
             var comentarios = await context.Comentarios.Where(comentarioDB => comentarioDB.LibroId == libroId).ToListAsync();
             return mapper.Map<List<ComentarioDTO>>(comentarios);
         }
@@ -35,7 +37,7 @@ namespace WebApiAutores.Controllers
             comentario.LibroId = libroId;
             context.Add(comentario);
             await context.SaveChangesAsync();
-            return Ok(comentario);
+            return Ok();
         }
     }
 }
