@@ -4,12 +4,16 @@ using System.Text.Json.Serialization;
 using WebApiAutores;
 using WebApiAutores.Filtros;
 using WebApiAutores.Middlewares;
+using WebAPIAutores.Filtros;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container.e
 
-builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+builder.Services.AddControllers(opciones => { opciones.Filters.Add(typeof(FiltroDeExcepcion));})
+    .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+//.AddNewtonsoftJson();
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 

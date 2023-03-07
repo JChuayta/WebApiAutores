@@ -1,14 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using WebAPIAutores.Validaciones;
 
-namespace WebApiAutores.DTOs
+namespace WebAPIAutores.DTOs
 {
-    public class LibroCreacionDTO
+    public class LibroPatchDTO
     {
         [PrimeraLetraMayuscula]
         [StringLength(maximumLength: 250)]
-        public string? Titulo { get; set; }
+        [Required]
+        public string Titulo { get; set; }
         public DateTime FechaPublicacion { get; set; }
-        public List<int> AutoresIds { get; set; }
     }
 }
