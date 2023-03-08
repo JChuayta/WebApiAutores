@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using WebAPIAutores.Validaciones;
+using WebApiAutores.Validaciones;
 
 namespace WebApiAutores.Entidades
 {
