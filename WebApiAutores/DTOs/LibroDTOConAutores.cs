@@ -1,6 +1,6 @@
 ﻿using WebApiAutores.DTOs;
 
-namespace WebAPIAutores.DTOs
+namespace WebApiAutores.DTOs
 {
     public class LibroDTOConAutores : LibroDTO
     {

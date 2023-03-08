@@ -4,10 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApiAutores.DTOs;
 using WebApiAutores.Entidades;
-using WebApiAutores;
-using WebAPIAutores.DTOs;
 
-namespace WebAPIAutores.Controllers
+namespace WebApiAutores.Controllers
 {
     [ApiController]
     [Route("api/libros")]

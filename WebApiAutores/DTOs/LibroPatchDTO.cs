@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using WebAPIAutores.Validaciones;
+using WebApiAutores.Validaciones;
 
-namespace WebAPIAutores.DTOs
+namespace WebApiAutores.DTOs
 {
     public class LibroPatchDTO
     {

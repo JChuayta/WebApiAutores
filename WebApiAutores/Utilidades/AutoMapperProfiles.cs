@@ -1,8 +1,6 @@
 ﻿using WebApiAutores.DTOs;
 using WebApiAutores.Entidades;
 using AutoMapper;
-using WebApiAutores.Migrations;
-using WebAPIAutores.DTOs;
 
 namespace WebApiAutores.Utilidades
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace WebAPIAutores.Filtros
+namespace WebApiAutores.Filtros
 {
     public class FiltroDeExcepcion : ExceptionFilterAttribute
     {
